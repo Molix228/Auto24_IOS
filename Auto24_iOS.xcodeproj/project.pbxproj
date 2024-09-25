@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		9441B7EF2CA46AA10077ECA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9441B7D62CA46A9F0077ECA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9441B7DD2CA46A9F0077ECA6;
+			remoteInfo = Auto24_iOS;
+		};
+		9441B7F92CA46AA10077ECA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9441B7D62CA46A9F0077ECA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9441B7DD2CA46A9F0077ECA6;
+			remoteInfo = Auto24_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9441B7DE2CA46A9F0077ECA6 /* Auto24_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auto24_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9441B7EE2CA46AA10077ECA6 /* Auto24_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Auto24_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9441B7F82CA46AA10077ECA6 /* Auto24_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Auto24_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9441B7E02CA46A9F0077ECA6 /* Auto24_iOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Auto24_iOS;
+			sourceTree = "<group>";
+		};
+		9441B7F12CA46AA10077ECA6 /* Auto24_iOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Auto24_iOSTests;
+			sourceTree = "<group>";
+		};
+		9441B7FB2CA46AA10077ECA6 /* Auto24_iOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Auto24_iOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9441B7DB2CA46A9F0077ECA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9441B7EB2CA46AA10077ECA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9441B7F52CA46AA10077ECA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9441B7D52CA46A9F0077ECA6 = {
+			isa = PBXGroup;
+			children = (
+				9441B7E02CA46A9F0077ECA6 /* Auto24_iOS */,
+				9441B7F12CA46AA10077ECA6 /* Auto24_iOSTests */,
+				9441B7FB2CA46AA10077ECA6 /* Auto24_iOSUITests */,
+				9441B7DF2CA46A9F0077ECA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9441B7DF2CA46A9F0077ECA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9441B7DE2CA46A9F0077ECA6 /* Auto24_iOS.app */,
+				9441B7EE2CA46AA10077ECA6 /* Auto24_iOSTests.xctest */,
+				9441B7F82CA46AA10077ECA6 /* Auto24_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9441B7DD2CA46A9F0077ECA6 /* Auto24_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9441B8022CA46AA10077ECA6 /* Build configuration list for PBXNativeTarget "Auto24_iOS" */;
+			buildPhases = (
+				9441B7DA2CA46A9F0077ECA6 /* Sources */,
+				9441B7DB2CA46A9F0077ECA6 /* Frameworks */,
+				9441B7DC2CA46A9F0077ECA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9441B7E02CA46A9F0077ECA6 /* Auto24_iOS */,
+			);
+			name = Auto24_iOS;
+			packageProductDependencies = (
+			);
+			productName = Auto24_iOS;
+			productReference = 9441B7DE2CA46A9F0077ECA6 /* Auto24_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9441B7ED2CA46AA10077ECA6 /* Auto24_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9441B8052CA46AA10077ECA6 /* Build configuration list for PBXNativeTarget "Auto24_iOSTests" */;
+			buildPhases = (
+				9441B7EA2CA46AA10077ECA6 /* Sources */,
+				9441B7EB2CA46AA10077ECA6 /* Frameworks */,
+				9441B7EC2CA46AA10077ECA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9441B7F02CA46AA10077ECA6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9441B7F12CA46AA10077ECA6 /* Auto24_iOSTests */,
+			);
+			name = Auto24_iOSTests;
+			packageProductDependencies = (
+			);
+			productName = Auto24_iOSTests;
+			productReference = 9441B7EE2CA46AA10077ECA6 /* Auto24_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9441B7F72CA46AA10077ECA6 /* Auto24_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9441B8082CA46AA10077ECA6 /* Build configuration list for PBXNativeTarget "Auto24_iOSUITests" */;
+			buildPhases = (
+				9441B7F42CA46AA10077ECA6 /* Sources */,
+				9441B7F52CA46AA10077ECA6 /* Frameworks */,
+				9441B7F62CA46AA10077ECA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9441B7FA2CA46AA10077ECA6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9441B7FB2CA46AA10077ECA6 /* Auto24_iOSUITests */,
+			);
+			name = Auto24_iOSUITests;
+			packageProductDependencies = (
+			);
+			productName = Auto24_iOSUITests;
+			productReference = 9441B7F82CA46AA10077ECA6 /* Auto24_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9441B7D62CA46A9F0077ECA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					9441B7DD2CA46A9F0077ECA6 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					9441B7ED2CA46AA10077ECA6 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 9441B7DD2CA46A9F0077ECA6;
+					};
+					9441B7F72CA46AA10077ECA6 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 9441B7DD2CA46A9F0077ECA6;
+					};
+				};
+			};
+			buildConfigurationList = 9441B7D92CA46A9F0077ECA6 /* Build configuration list for PBXProject "Auto24_iOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9441B7D52CA46A9F0077ECA6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9441B7DF2CA46A9F0077ECA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9441B7DD2CA46A9F0077ECA6 /* Auto24_iOS */,
+				9441B7ED2CA46AA10077ECA6 /* Auto24_iOSTests */,
+				9441B7F72CA46AA10077ECA6 /* Auto24_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9441B7DC2CA46A9F0077ECA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9441B7EC2CA46AA10077ECA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9441B7F62CA46AA10077ECA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9441B7DA2CA46A9F0077ECA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9441B7EA2CA46AA10077ECA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9441B7F42CA46AA10077ECA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9441B7F02CA46AA10077ECA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9441B7DD2CA46A9F0077ECA6 /* Auto24_iOS */;
+			targetProxy = 9441B7EF2CA46AA10077ECA6 /* PBXContainerItemProxy */;
+		};
+		9441B7FA2CA46AA10077ECA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9441B7DD2CA46A9F0077ECA6 /* Auto24_iOS */;
+			targetProxy = 9441B7F92CA46AA10077ECA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9441B8002CA46AA10077ECA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9441B8012CA46AA10077ECA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9441B8032CA46AA10077ECA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Auto24_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 65VK4K3ZG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "auto24.Auto24-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9441B8042CA46AA10077ECA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Auto24_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 65VK4K3ZG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "auto24.Auto24-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9441B8062CA46AA10077ECA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65VK4K3ZG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "auto24.Auto24-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auto24_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Auto24_iOS";
+			};
+			name = Debug;
+		};
+		9441B8072CA46AA10077ECA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65VK4K3ZG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "auto24.Auto24-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auto24_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Auto24_iOS";
+			};
+			name = Release;
+		};
+		9441B8092CA46AA10077ECA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65VK4K3ZG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "auto24.Auto24-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Auto24_iOS;
+			};
+			name = Debug;
+		};
+		9441B80A2CA46AA10077ECA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65VK4K3ZG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "auto24.Auto24-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Auto24_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9441B7D92CA46A9F0077ECA6 /* Build configuration list for PBXProject "Auto24_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9441B8002CA46AA10077ECA6 /* Debug */,
+				9441B8012CA46AA10077ECA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9441B8022CA46AA10077ECA6 /* Build configuration list for PBXNativeTarget "Auto24_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9441B8032CA46AA10077ECA6 /* Debug */,
+				9441B8042CA46AA10077ECA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9441B8052CA46AA10077ECA6 /* Build configuration list for PBXNativeTarget "Auto24_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9441B8062CA46AA10077ECA6 /* Debug */,
+				9441B8072CA46AA10077ECA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9441B8082CA46AA10077ECA6 /* Build configuration list for PBXNativeTarget "Auto24_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9441B8092CA46AA10077ECA6 /* Debug */,
+				9441B80A2CA46AA10077ECA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9441B7D62CA46A9F0077ECA6 /* Project object */;
+}
