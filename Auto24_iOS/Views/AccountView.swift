@@ -7,16 +7,34 @@ struct AccountView: View {
     init(isRegistered: Binding<Bool>, isEntered: Binding<Bool>) {
         self._isRegistered = isRegistered
         self._isEntered = isEntered
-        self._isEntered.wrappedValue = UserDefaults.standard.bool(forKey: "isEntered") // ✅ Загружаем сохранённое значение
     }
 
     var body: some View {
-        if isEntered {
-            ExpandedAccountView()
-        } else if isRegistered {
-            LoginView(isEntered: $isEntered)
+        VStack {
+            if isEntered {
+                ExpandedAccountView()
+            } else if isRegistered {
+                LoginView(isEntered: $isEntered)
+            } else {
+                RegistrationView(isRegistered: $isRegistered)
+            }
+        }
+        .onAppear {
+            checkAuthStatus() // ✅ Проверяем аутентификацию при открытии экрана
+        }
+    }
+
+    private func checkAuthStatus() {
+        if let token = KeychainHelper.getToken(), !token.isEmpty {
+            DispatchQueue.main.async {
+                self.isEntered = true
+                print("✅ Пользователь авторизован через токен в Keychain")
+            }
         } else {
-            RegistrationView(isRegistered: $isRegistered)
+            DispatchQueue.main.async {
+                self.isEntered = false
+                print("❌ Токен отсутствует в Keychain, авторизация не выполнена")
+            }
         }
     }
 }

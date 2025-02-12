@@ -54,11 +54,6 @@ struct LoginView: View {
                 }
             }
         }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-            }
-        }
     }
 
     func loginUser() {
@@ -90,43 +85,32 @@ struct LoginView: View {
             if let httpResponse = response as? HTTPURLResponse {
                 print("🔹 Получен ответ от сервера: \(httpResponse.statusCode)")
 
-                if let headerFields = httpResponse.allHeaderFields as? [String: String] {
-                    print("🔍 Заголовки ответа: \(headerFields)")
+                guard let data = data else {
+                    print("❌ Ошибка: пустой ответ от сервера")
+                    return
                 }
 
-                // Проверяем, есть ли userID в JSON-ответе
-                if let data = data {
-                    do {
-                        let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                        print("📡 JSON-ответ сервера: \(json ?? [:])") // ✅ Логируем JSON
-                        if let userID = json?["userID"] as? String {
-                            print("🔹 userID из тела ответа: \(userID)")
-                            Task { await saveUserID(userID) }
-                            return
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                       let token = json["token"] as? String {
+                        
+                        print("🔹 Получен токен: \(token)")
+                        KeychainHelper.saveToken(token) // ✅ Сохраняем токен в Keychain
+
+                        DispatchQueue.main.async {
+                            self.isEntered = true
+                            print("✅ Авторизация успешна, isEntered = \(self.isEntered)")
                         }
-                    } catch {
-                        print("❌ Ошибка парсинга JSON: \(error)")
+                    } else {
+                        print("❌ Ошибка: Токен не найден в ответе сервера")
                     }
-                }
-
-                DispatchQueue.main.async {
-                    self.isEntered = false
-                    print("⚠️ `userID` не найден, isEntered = false")
+                } catch {
+                    print("❌ Ошибка парсинга JSON: \(error)")
                 }
             } else if let error = error {
                 print("❌ HTTP запрос не удался: \(error.localizedDescription)")
             }
         }.resume()
-    }
-
-    @MainActor
-    private func saveUserID(_ userID: String) async {
-        UserDefaults.standard.set(userID, forKey: "userID")
-        UserDefaults.standard.set(true, forKey: "isEntered")
-        if self.isEntered != true { // ✅ Проверяем, изменялся ли уже `isEntered`
-            self.isEntered = true
-            print("✅ isEntered изменён на: \(self.isEntered)")
-        }
     }
 }
 

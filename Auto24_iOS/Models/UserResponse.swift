@@ -16,5 +16,5 @@ struct UserResponse: Identifiable, Decodable {
 }
 
 struct UserImageResponse: Decodable {
-    
+    var path: String
 }
