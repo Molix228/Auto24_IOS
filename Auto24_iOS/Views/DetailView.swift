@@ -8,11 +8,50 @@
 import SwiftUI
 
 struct DetailView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let item: ItemResponse
+    @State private var selectedImageIndex = 0
 
-#Preview {
-    DetailView()
+    var body: some View {
+        VStack {
+            TabView(selection: $selectedImageIndex) {
+                ForEach(Array(item.images.enumerated()), id: \.offset) { index, image in
+                    AsyncImage(url: URL(string: image.path)) { phase in
+                        switch phase {
+                        case .empty:
+                            ProgressView()
+                        case .success(let image):
+                            image.resizable()
+                                .scaledToFill()
+                                .frame(height: 200)
+                                .clipped()
+                        case .failure:
+                            Image(systemName: "photo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 200)
+                                .foregroundColor(.gray)
+                        @unknown default:
+                            EmptyView()
+                        }
+                    }
+                    .tag(index)
+                }
+            }
+            VStack(alignment: .leading, spacing: 10) {
+                Text("\(item.make) \(item.model)")
+                    .font(.title)
+                    .bold()
+                Text("Year: \(item.year)")
+                    .font(.subheadline)
+                if let mileage = item.mileage {
+                    Text("Mileage: \(mileage) км")
+                        .font(.subheadline)
+                }
+            }
+            .padding()
+
+            Spacer()
+        }
+        .navigationTitle("Details:")
+    }
 }

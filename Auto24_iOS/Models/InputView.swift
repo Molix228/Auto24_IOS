@@ -1,18 +1,31 @@
-//
-//  InputView.swift
-//  Auto24_iOS
-//
-//  Created by Александр Меслюк on 10.10.2024.
-//
-
 import SwiftUI
 
 struct InputView: View {
+    @Binding var text: String
+    let title: String
+    var placeholder: String
+    var isSecuredField = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 10){
+            Text(title)
+                .foregroundStyle(.blue)
+                .fontWeight(.medium)
+                .font(.title3)
+            
+            if isSecuredField {
+                SecureField(placeholder, text: $text)
+                    .font(.system(size: 18))
+            } else {
+                TextField(placeholder, text: $text)
+                    .font(.system(size: 18))
+            }
+            
+            Divider()
+        }
     }
 }
 
 #Preview {
-    InputView()
+    InputView(text: .constant(""), title: "Email", placeholder: "example@mail.com")
 }

@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+struct ItemResponse: Identifiable, Decodable {
+    let id: String
+    let make: String
+    let model: String
+    let price: Int
+    let year: Int
+    let mileage: Int?
+    let images: [ImageResponse]
+}
+
+struct ImageResponse: Decodable {
+    let path: String
+}
