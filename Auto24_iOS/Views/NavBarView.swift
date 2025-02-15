@@ -9,10 +9,8 @@ import SwiftUI
 
 struct NavBarView: View {
     @State private var tabSelection = 1
-    @State private var isRegistered: Bool = false
-    @State private var isEntered: Bool = false
     @State private var keyboardVisible = false
-    
+    @StateObject var authViewModel = AuthViewModel()
     @State private var languageShow: Bool = false
     var body: some View {
         TabView(selection: $tabSelection){
@@ -22,7 +20,8 @@ struct NavBarView: View {
             SearchView()
                 .tag(2)
             FavView().tag(3)
-            AccountView(isRegistered: $isRegistered, isEntered: $isEntered)
+            RootView()
+                .environmentObject(authViewModel)
                 .tag(4)
             NotificationView()
                 .tag(5)

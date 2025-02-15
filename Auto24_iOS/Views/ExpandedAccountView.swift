@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ExpandedAccountView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
     @State private var user: UserResponse?
     
     var body: some View {
